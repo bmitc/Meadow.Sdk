@@ -56,7 +56,7 @@
         <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
         <Icon guid="guidImages1" id="bmpPic1" />
         <Strings>
-          <ButtonText>MeadowWindow</ButtonText>
+          <ButtonText>Meadow</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -75,7 +75,7 @@
   </Commands>
 
   <KeyBindings>
-    <KeyBinding guid="guidCommand2PackageCmdSet" id="cmdidMeadowWindowCommand" editor="guidVSStd97" key1="2" mod1="Control" />
+    <KeyBinding guid="guidCommand2PackageCmdSet" id="cmdidMeadowWindowCommand" editor="guidVSStd97" key1="M" mod1="Control Shift" />
   </KeyBindings>
   
   <Symbols>

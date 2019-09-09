@@ -40,7 +40,7 @@
             MeadowSettings settings = new MeadowSettings(Globals.SettingsFilePath);
 
             Devices.Items.Clear();
-            Devices.Items.Add("Select Meadow Device");
+            Devices.Items.Add("None");
 
             var devices = MeadowDeviceManager.FindSerialDevices();
             var selectedIndex = 0;

@@ -20,6 +20,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </StackPanel.RenderTransform>
+            <TextBlock HorizontalAlignment="Center" Margin="0 20 0 0">Please select a Meadow device:</TextBlock>
             <StackPanel Orientation="Horizontal" Margin="20">
                 <ComboBox x:Name="Devices" Width="160" SelectionChanged="Devices_SelectionChanged"/>
                 <Button x:Name="Refresh" Width="50" Margin="0 0 5 0" Click="Refresh_Click" Content="Refresh"/>
