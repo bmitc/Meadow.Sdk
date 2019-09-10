@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using EnvDTE;
 using Meadow.Helpers;
 using MeadowCLI.DeviceManagement;
-using Microsoft.VisualStudio;
-//using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.ProjectSystem;
 using Microsoft.VisualStudio.ProjectSystem.Build;
 
