@@ -109,6 +109,7 @@ namespace MeadowCLI.DeviceManagement
                     tcs.SetResult(true);
                 }
             };
+
             dataProcessor.OnReceiveData += handler;
 
             MeadowFileManager.WriteFileToFlash(this, Path.Combine(path, filename), filename);
@@ -208,7 +209,7 @@ namespace MeadowCLI.DeviceManagement
 
                 SerialPort = port;
             }
-            catch
+            catch(Exception ex)
             {
                 return false; //serial port couldn't be opened .... that's ok
             }

@@ -68,6 +68,7 @@ namespace Meadow
                 await DeployMeadowAppAsync(meadow, outputPaneWriter, cts, folder);
 
                 await ResetMeadowAndStartMonoAsync(meadow, outputPaneWriter, cts);
+
             }
             catch (Exception ex)
             {
@@ -165,12 +166,12 @@ namespace Meadow
 
             await Task.Delay(2500);//wait for reboot
 
-            //reconnect serial port
-            if (meadow.Initialize() == false)
-            {
-                //find device with matching serial
+            ////reconnect serial port
+            //if (meadow.Initialize() == false)
+            //{
+            //    //find device with matching serial
 
-            }
+            //}
         }
 
         public bool IsDeploySupported
