@@ -226,6 +226,21 @@ namespace MeadowCLI
                 Console.WriteLine("Entering Dfu mode");
                 MeadowDeviceManager.EnterDfuMode(MeadowDeviceManager.CurrentDevice);
             }
+            else if (options.QspiInit)
+            {
+                Console.WriteLine("Init test");
+                MeadowDeviceManager.QspiInit(MeadowDeviceManager.CurrentDevice, options.DeveloperValue);
+            }
+            else if (options.QspiWrite)
+            {
+                Console.WriteLine("Write test");
+                MeadowDeviceManager.QspiWrite(MeadowDeviceManager.CurrentDevice, options.DeveloperValue);
+            }
+            else if (options.QspiRead)
+            {
+                Console.WriteLine("Read test");
+                MeadowDeviceManager.QspiRead(MeadowDeviceManager.CurrentDevice, options.DeveloperValue);
+            }
 
             return CompletionBehavior.Success | CompletionBehavior.ExitConsole;
         }

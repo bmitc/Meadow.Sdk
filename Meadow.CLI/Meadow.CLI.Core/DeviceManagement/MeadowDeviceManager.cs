@@ -155,6 +155,26 @@ namespace MeadowCLI.DeviceManagement
 
             new SendTargetData(meadow.SerialPort).SendSimpleCommand(_meadowRequestType, (uint)userData);
         }
+        public static void QspiInit(MeadowSerialDevice meadow, int userData)
+        {
+            _meadowRequestType = HcomMeadowRequestType.HCOM_MDOW_REQUEST_S25FL_QSPI_INIT;
+
+            new SendTargetData(meadow.SerialPort).SendSimpleCommand(_meadowRequestType, (uint)userData);
+        }
+
+        public static void QspiWrite(MeadowSerialDevice meadow, int userData)
+        {
+            _meadowRequestType = HcomMeadowRequestType.HCOM_MDOW_REQUEST_S25FL_QSPI_WRITE;
+
+            new SendTargetData(meadow.SerialPort).SendSimpleCommand(_meadowRequestType, (uint)userData);
+        }
+
+        public static void QspiRead(MeadowSerialDevice meadow, int userData)
+        {
+            _meadowRequestType = HcomMeadowRequestType.HCOM_MDOW_REQUEST_S25FL_QSPI_READ;
+
+            new SendTargetData(meadow.SerialPort).SendSimpleCommand(_meadowRequestType, (uint)userData);
+        }
 
         public static void EnterEchoMode(MeadowSerialDevice meadow)
         {

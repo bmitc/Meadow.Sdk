@@ -57,6 +57,14 @@ namespace MeadowCLI
         [Option(longName: "GetDeviceInfo", Required = false, HelpText = "Enable mono so it can run")]
         public bool GetDeviceInfo { get; set; }
 
+        [Option(longName: "QspiInit", Required = false, HelpText = "Init qspi flash for testing")]
+        public bool QspiInit { get; set; }
+        [Option(longName: "QspiWrite", Required = false, HelpText = "Write qspi flash for testing")]
+        public bool QspiWrite { get; set; }
+        [Option(longName: "QspiRead", Required = false, HelpText = "Read qspi flash for testing")]
+        public bool QspiRead { get; set; }
+
+
         [Option(longName: "ListFiles", Required = false, HelpText = "List all files in Meadow partition")]
         public bool ListFiles { get; set; }
         [Option(longName: "ListFilesAndCrcs", Required = false, HelpText = "List all files and CRCs in a Meadow partition")]
